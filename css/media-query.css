@@ -54,7 +54,7 @@
         left: 50%;
         width: 0;
         height: 1px;
-        background-color: var(--primary-color);
+        background-color: var(--font-color);
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
@@ -63,11 +63,16 @@
         width: 100%;
     }
 
+    .row .product-name{
+        font-size: 1.4rem;
+    }
+
     .product-name {
         position: relative;
         display: inline-block;
         cursor: pointer;
         padding-bottom: .1rem;
+        font-size: 1.4rem;
     }
 
     .product-name::after {
