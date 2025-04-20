@@ -1,0 +1,219 @@
+@media screen and (min-width:62rem) { /*992px*/
+
+    :root {
+        --primary-color: #36302A;
+        --secondary-color: #ECE4DA;
+        --font-color: #574C3F;
+        --font-color-btn: #F8F2EC;
+        --background-cards: #F8F2EC;
+        --primary-font: "EB Garamond", serif;
+        --margin: 2.2rem;
+    }
+
+    .logo-img {
+        width: 10rem;
+    }
+
+    /***************************************/
+    .header-container {
+        width: auto;
+    }
+
+    .navbar .navbar-nav.navbar-links .nav-item,
+    .navbar .navbar-nav.navbar-links .nav-item .nav-link,
+    .navbar .navbar-nav.navbar-links .nav-item a {
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+
+    .navbar-links {
+        padding: 0;
+        gap: 2.5rem;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+
+    .nav-link:hover {
+        color: var(--primary-color);
+    }
+
+    .nav-link {
+        position: relative;
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .nav-link::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 1px;
+        background-color: var(--primary-color);
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+
+    .nav-link:hover::after {
+        width: 100%;
+    }
+
+    .product-name {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+    
+    .product-name::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 0;
+        height: 2px;
+        background-color: var(--font-color); 
+        transition: all 0.3s ease;
+        transform: translateX(-50%);
+    }
+    
+    .product-card a:hover .product-name::after {
+        width: 100%;
+    }
+    
+
+    .btn, .product-card, .nav-link, .social-links-img{
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .btn:hover, .product-card:hover, .nav-link:hover, .social-links-img:hover{
+        transform: scale(1.05);
+    }
+
+    .product-name{
+        border-bottom: none;
+    }
+
+    .description p{
+        font-size: 1.2rem;
+    }
+
+    .step-title{
+        font-size: 1.4rem;
+    }
+
+    /********************************************************/
+    .main-container {
+        width: 90%;
+        /* border: 1px solid red; */
+        /* width: 100%; */
+        /* width: clamp(70%, calc(100% - 10vw), 75%); */
+    }
+
+
+    .carousel-control-prev {
+        left: 8rem;
+    }
+
+    .carousel-control-next {
+        right: 8rem;
+    }
+
+    .btn-prev,
+    .btn-next {
+        font-size: 2rem;
+    }
+
+    .h1 {
+        font-size: 1.8rem;
+    }
+
+    .cards-products-container {
+        margin: var(--margin) 0;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .row {
+        width: clamp(9.4rem, 100%, 24rem);    
+    }
+
+    .featured-product-img {
+        max-width: calc(25% - .5rem);
+    }
+
+    .contact {
+        font-size: 1.2rem;
+    }
+
+    .name-store {
+        font-size: 1rem;
+        text-transform: uppercase;
+    }
+
+    .fone {
+        font-size: 1rem;
+        margin-left: .4rem;
+        margin: 0;
+        margin-left: .5rem;
+    }
+
+    .whatsapp {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+
+    .copyright-footer {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:64rem) {
+    .cards-row{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .row{
+        width: clamp(9.4rem, 100%, 24rem);
+    }
+}
+
+@media screen and (min-width:90rem){ /*1440px*/
+    .main-container {
+        width: 80%;
+    }
+}
+
+@media screen and (min-width:103rem){ /*1660px*/
+    .main-container {
+        width: 75%;
+    }
+}
+
+/*
+Breakpoints mais usados:
+480px – Telas pequenas (smartphones mais antigos ou bem compactos). pg ini ok - Quem somos nós ok - pg-venda ok
+
+Ex: ajustes finos no tamanho da fonte, botões menores, etc.
+
+768px – Tablets em modo retrato. pg ini ok - Quem somos nós ok - pg-venda ok
+
+Ex: mudar de layout empilhado pra um layout com duas colunas.
+
+1024px – Tablets em modo paisagem ou notebooks pequenos. pg ini ok - Quem somos nós ok - pg-venda ok
+
+Ex: aumentar paddings, mostrar menu horizontal, etc.
+
+1280px – Laptops médios e desktops. pg ini ok - Quem somos nós ok - pg-venda ok
+
+Ex: container mais largo, grid com mais colunas, etc.
+
+1440px ou 1600px – Telas grandes. pg ini ok - Quem somos nós ok - pg-venda ok
+
+1600px ou mais – Telas extra grandes. pg ini ok - Quem somos nós ok - pg-venda ok
+
+Ex: ajustar o conteúdo pra não ficar "espalhado demais".
+*/
