@@ -1,4 +1,5 @@
-@media screen and (min-width:62rem) { /*992px*/
+@media screen and (min-width:62rem) {
+    /*992px*/
 
     :root {
         --primary-color: #36302A;
@@ -66,42 +67,49 @@
         position: relative;
         display: inline-block;
         cursor: pointer;
+        padding-bottom: .1rem;
     }
-    
+
     .product-name::after {
         content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
         width: 0;
-        height: 2px;
-        background-color: var(--font-color); 
+        height: 1px;
+        background-color: var(--font-color);
         transition: all 0.3s ease;
         transform: translateX(-50%);
     }
-    
+
     .product-card a:hover .product-name::after {
         width: 100%;
     }
-    
 
-    .btn, .product-card, .nav-link, .social-links-img{
+
+    .btn,
+    .product-card,
+    .nav-link,
+    .social-links-img {
         transition: transform 0.3s ease-in-out;
     }
 
-    .btn:hover, .product-card:hover, .nav-link:hover, .social-links-img:hover{
+    .btn:hover,
+    .product-card:hover,
+    .nav-link:hover,
+    .social-links-img:hover {
         transform: scale(1.05);
     }
 
-    .product-name{
+    .product-name {
         border-bottom: none;
     }
 
-    .description p{
+    .description p {
         font-size: 1.2rem;
     }
 
-    .step-title{
+    .step-title {
         font-size: 1.4rem;
     }
 
@@ -138,7 +146,7 @@
     }
 
     .row {
-        width: clamp(9.4rem, 100%, 24rem);    
+        width: clamp(9.4rem, 100%, 24rem);
     }
 
     .featured-product-img {
@@ -172,22 +180,26 @@
 }
 
 @media screen and (min-width:64rem) {
-    .cards-row{
+    .cards-row {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .row{
+    .row {
         width: clamp(9.4rem, 100%, 24rem);
     }
 }
 
-@media screen and (min-width:90rem){ /*1440px*/
+@media screen and (min-width:90rem) {
+
+    /*1440px*/
     .main-container {
         width: 80%;
     }
 }
 
-@media screen and (min-width:103rem){ /*1660px*/
+@media screen and (min-width:103rem) {
+
+    /*1660px*/
     .main-container {
         width: 75%;
     }
