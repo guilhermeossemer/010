@@ -37,7 +37,6 @@ a {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    /* border: 1px solid red; */
 }
 
 /* -------------------------------------------------- */
@@ -48,7 +47,6 @@ a {
     align-items: center;
     justify-content: space-between;
     padding: .5rem 0;
-    /* padding: .5rem var(--margin); */
 }
 
 .fa-bars {
@@ -97,10 +95,6 @@ a {
     font-size: 1.2rem;
 }
 
-.nav-item {
-    border-bottom: 1px solid var(--font-color);
-}
-
 .main {
     flex: 1;
 }
@@ -108,7 +102,6 @@ a {
 /*--------------------------------------------------------*/
 /* CAROUSEL */
 #carouselProdutos{
-    /* width: 100%; */
     padding: 0;
     margin-bottom: var(--margin);
 }
@@ -122,15 +115,12 @@ a {
     object-fit: contain;
     margin: 0 auto;
     display: block;
-    /* transition: transform 0.5s ease-in-out; */
     padding: 1.2rem;
 }
 
 .carousel-details {
     width: clamp(11.25rem, 100%, 25rem);
-    /* background-color: var(--background-cards); */
     padding: 1rem;
-    /* border: 1px solid var(--primary-color); */
     margin: auto;
     border-radius: 15px;
 }
@@ -144,23 +134,14 @@ a {
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
     display: none;
-    /* width: auto; */
-    /* height: 100%; */
-    /* top: 0; */
-    /* bottom: 0; */
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* position: absolute; */
-    /* z-index: 1; */
 }
 
 .carousel-control-prev {
-    left: -1rem; /* Aumente esse valor para afastar mais */
+    left: -1rem; 
 }
 
 .carousel-control-next {
-    right: -1rem; /* Aumente esse valor para afastar mais */
+    right: -1rem; 
 }
 
 .btn-prev,
@@ -185,8 +166,6 @@ a {
     background-color: var(--primary-color);
 }
 
-
-
 /*-------------------------------------------------------*/
 .h2, .h1 {
     font-size: 1.8rem;
@@ -194,20 +173,12 @@ a {
     margin: var(--margin) 0;
 }
 
-/* .h {
-    font-size: 1.2rem;
-    font-weight: bold;
-    text-align: center;
-    margin-top: var(--margin);
-} */
-
 .h1-detail-product{
     display: flex;
     justify-content: center;
 }
 
 .h1-detail-product h1{
-    border-bottom: 1px solid var(--font-color);
     line-height: 1;
 }
 
@@ -219,13 +190,10 @@ a {
     flex-direction: column;
     align-items: center;
     gap: var(--margin);
-    /* padding: var(--margin); */
-    /* border: 1px solid rgb(0, 255, 13); */
 }
 
 .product-card {
     height: auto;
-    /* width: 100%; */
     width: clamp(11.25rem, 100%, 24rem);
     aspect-ratio: 4 / 3;
     display: flex;
@@ -233,7 +201,6 @@ a {
     justify-content: space-between;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--primary-color);
     border-radius: 15px;
     background-color: var(--background-cards);
     padding: 1rem;
@@ -249,18 +216,16 @@ a {
     flex-direction: column;
     margin: var(--margin) auto;
     margin: 0 auto;
-    /* font-family: var(--secondary-font); */
-    /* border: 1px solid blue; */
 }
 
 .textarea {
     margin: var(--margin) 0;
     height: 10rem;
     border-radius: 15px;
-    border: 1px solid var(--primary-color);
     padding: .5rem;
     color: var(--font-color);
     font-size: 1.2rem;
+    border: none;
 }
 
 .textarea:hover {
@@ -302,7 +267,6 @@ a {
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1;
-    border-bottom: 1px solid var(--font-color);
 }
 
 .description-product-detail {
@@ -322,7 +286,6 @@ a {
     font-size: 1.4rem;
 }
 
-
 /**********************************************/
 .btn-page-products{
     display: flex;
@@ -334,8 +297,6 @@ a {
     border: none;
     border-radius: 15px;
     color: var(--font-color-btn);
-    /* font-family: var(--secondary-font); */
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -370,13 +331,13 @@ a {
     font-size: 1rem;
     cursor: pointer;
     z-index: 999;
-    display: none; /* inicia escondido */
+    display: none; 
     transition: background-color 0.3s ease;
   }
   
   .btn-topo:hover, .btn:hover {
     color: var(--font-color-btn);
-    background-color: var(--font-color); /* cor mais escura no hover */
+    background-color: var(--font-color); 
   }
   
 
@@ -412,7 +373,6 @@ a {
 /************pag-quem-somos-como-comprar*/
 
 .description {
-    /* font-family: var(--secondary-font); */
     text-align: center;
     margin: var(--margin) 0;
 }
@@ -428,8 +388,6 @@ a {
 /*---------------------------------------*/
 
 .footer {
-    /* color: var(--font-color); */
-    /* font-family: var(--secondary-font); */
     margin: 0;
     margin: var(--margin) 0;
 }
@@ -466,27 +424,3 @@ a {
     text-align: center;
     margin: var(--margin) 0;
 }
-
-
-/*
-Breakpoints mais usados:
-480px – Telas pequenas (smartphones mais antigos ou bem compactos).
-
-Ex: ajustes finos no tamanho da fonte, botões menores, etc.
-
-768px – Tablets em modo retrato.
-
-Ex: mudar de layout empilhado pra um layout com duas colunas.
-
-1024px – Tablets em modo paisagem ou notebooks pequenos.
-
-Ex: aumentar paddings, mostrar menu horizontal, etc.
-
-1280px – Laptops médios e desktops.
-
-Ex: container mais largo, grid com mais colunas, etc.
-
-1440px ou 1600px – Telas grandes.
-
-Ex: ajustar o conteúdo pra não ficar "espalhado demais".
-*/
